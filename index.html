@@ -44,8 +44,8 @@
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfill-orders
-      successUrl: 'https://your-website.com/success',
-      cancelUrl: 'https://your-website.com/canceled',
+      successUrl: 'https://excheckout.netlify.app/succes',
+      cancelUrl: 'https://excheckout.netlify.app/error',
     })
     .then(function (result) {
       if (result.error) {
