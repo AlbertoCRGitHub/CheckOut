@@ -21,7 +21,7 @@
             <button
             style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
             
-            id="checkout-button-price_price_1HiLURDU8E6zoNrNavVSVNeT"
+            id="checkout-button-price_1HiLSxDU8E6zoNrNkdmOMmod"
             role="link"
             type="button"
             >
@@ -32,21 +32,21 @@
 
 
 
-            <!-- price_1HiLSxDU8E6zoNrNkdmOMmod -->
+
 
 </body>
 <script>
     (function() {
     var stripe = Stripe('pk_live_51HbWAyDU8E6zoNrNPP3OjJJ3j6ccTEwVR3HLchsWyMJbtP7s6DYzqDdeb9Hdy8pkWG8Rv8FeK3kuZuJD30iD8ROh00ZC0e00oL');
 
-    var checkoutButton = document.getElementById('checkout-button-price_1HiLURDU8E6zoNrNavVSVNeT');
+    var checkoutButton = document.getElementById('checkout-button-price_1HiLSxDU8E6zoNrNkdmOMmod');
     
     
     checkoutButton.addEventListener('click', function () {
         // When the customer clicks on the button, redirect
         // them to Checkout.
         stripe.redirectToCheckout({
-        lineItems: [{price: 'price_price_1HiLURDU8E6zoNrNavVSVNeT', quantity: 1}],
+        lineItems: [{price: 'price_1HiLSxDU8E6zoNrNkdmOMmod', quantity: 1}],
         mode: 'payment',
         // Do not rely on the redirect to the successUrl for fulfilling
         // purchases, customers may not always reach the success_url after
